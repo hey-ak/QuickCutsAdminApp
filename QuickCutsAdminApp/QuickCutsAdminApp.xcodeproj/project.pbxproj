@@ -32,6 +32,13 @@
 		A96849682BE21789004523B2 /* ProfileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96849642BE21789004523B2 /* ProfileTableCell.swift */; };
 		A968496B2BE2186B004523B2 /* dummyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96849692BE2186B004523B2 /* dummyTableCell.swift */; };
 		A968496C2BE2186B004523B2 /* dummyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A968496A2BE2186B004523B2 /* dummyTableCell.xib */; };
+		A968497A2BE21C9E004523B2 /* BookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96849792BE21C9E004523B2 /* BookingVC.swift */; };
+		A96849812BE21D2D004523B2 /* BookingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968497B2BE21D2D004523B2 /* BookingCollectionCell.swift */; };
+		A96849852BE21D2D004523B2 /* BookingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A968497F2BE21D2D004523B2 /* BookingCollectionCell.xib */; };
+		A968498D2BE23D2C004523B2 /* BookingCompletedCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96849892BE23D2C004523B2 /* BookingCompletedCollectionCell.xib */; };
+		A968498E2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */; };
+		A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */; };
+		A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,13 @@
 		A96849642BE21789004523B2 /* ProfileTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableCell.swift; sourceTree = "<group>"; };
 		A96849692BE2186B004523B2 /* dummyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummyTableCell.swift; sourceTree = "<group>"; };
 		A968496A2BE2186B004523B2 /* dummyTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dummyTableCell.xib; sourceTree = "<group>"; };
+		A96849792BE21C9E004523B2 /* BookingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingVC.swift; sourceTree = "<group>"; };
+		A968497B2BE21D2D004523B2 /* BookingCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCollectionCell.swift; sourceTree = "<group>"; };
+		A968497F2BE21D2D004523B2 /* BookingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCollectionCell.xib; sourceTree = "<group>"; };
+		A96849892BE23D2C004523B2 /* BookingCompletedCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCompletedCollectionCell.xib; sourceTree = "<group>"; };
+		A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCancelledCollectionCell.xib; sourceTree = "<group>"; };
+		A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCancelledCollectionCell.swift; sourceTree = "<group>"; };
+		A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCompletedCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +156,12 @@
 				A96849632BE21789004523B2 /* ProfileTableCell.xib */,
 				A96849692BE2186B004523B2 /* dummyTableCell.swift */,
 				A968496A2BE2186B004523B2 /* dummyTableCell.xib */,
+				A968497B2BE21D2D004523B2 /* BookingCollectionCell.swift */,
+				A968497F2BE21D2D004523B2 /* BookingCollectionCell.xib */,
+				A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */,
+				A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */,
+				A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */,
+				A96849892BE23D2C004523B2 /* BookingCompletedCollectionCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -176,6 +196,7 @@
 				A96849572BE211F4004523B2 /* AlbumVC.swift */,
 				A96849592BE214CC004523B2 /* CentreVC.swift */,
 				A968495F2BE2176F004523B2 /* ProfileVC.swift */,
+				A96849792BE21C9E004523B2 /* BookingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A968494E2BE21075004523B2 /* TimeSlotCollectionCell.xib in Resources */,
+				A968498D2BE23D2C004523B2 /* BookingCompletedCollectionCell.xib in Resources */,
 				A96849362BE20DE6004523B2 /* Assets.xcassets in Resources */,
 				A96849392BE20DE6004523B2 /* Base in Resources */,
 				A96849502BE21075004523B2 /* DateSelectCollectionViewCell.xib in Resources */,
@@ -247,6 +269,8 @@
 				A96849672BE21789004523B2 /* ProfileTableCell.xib in Resources */,
 				A96849552BE211DF004523B2 /* AlbumCollectionViewCell.xib in Resources */,
 				A96849342BE20DE5004523B2 /* Base in Resources */,
+				A96849852BE21D2D004523B2 /* BookingCollectionCell.xib in Resources */,
+				A968498E2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib in Resources */,
 				A968495D2BE214DA004523B2 /* CentreCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96849812BE21D2D004523B2 /* BookingCollectionCell.swift in Sources */,
 				A96849682BE21789004523B2 /* ProfileTableCell.swift in Sources */,
 				A968496B2BE2186B004523B2 /* dummyTableCell.swift in Sources */,
 				A96849602BE2176F004523B2 /* ProfileVC.swift in Sources */,
@@ -266,11 +291,14 @@
 				A968494F2BE21075004523B2 /* TimeSlotCollectionCell.swift in Sources */,
 				A96849522BE2113D004523B2 /* ViewExtensions.swift in Sources */,
 				A968494D2BE21075004523B2 /* DateSelectCollectionViewCell.swift in Sources */,
+				A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */,
+				A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */,
 				A96849312BE20DE5004523B2 /* ViewController.swift in Sources */,
 				A968495A2BE214CC004523B2 /* CentreVC.swift in Sources */,
 				A968492D2BE20DE5004523B2 /* AppDelegate.swift in Sources */,
 				A96849582BE211F4004523B2 /* AlbumVC.swift in Sources */,
 				A968495E2BE214DA004523B2 /* CentreCollectionViewCell.swift in Sources */,
+				A968497A2BE21C9E004523B2 /* BookingVC.swift in Sources */,
 				A968492F2BE20DE5004523B2 /* SceneDelegate.swift in Sources */,
 				A96849482BE21059004523B2 /* DateAndTimeVC.swift in Sources */,
 			);
