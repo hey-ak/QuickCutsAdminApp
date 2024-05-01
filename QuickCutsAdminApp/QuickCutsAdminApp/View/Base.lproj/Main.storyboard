@@ -386,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpw-7J-FUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2364" y="-1627"/>
+            <point key="canvasLocation" x="-3170" y="-1627"/>
         </scene>
         <!--Date And TimeVC-->
         <scene sceneID="ojT-ZZ-cAM">
@@ -635,11 +635,11 @@
             </objects>
             <point key="canvasLocation" x="-1871" y="-908"/>
         </scene>
-        <!--Item-->
+        <!--Appointments-->
         <scene sceneID="eYJ-i7-SwF">
             <objects>
                 <navigationController id="TAb-HR-Of5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="acK-4t-uDy"/>
+                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" id="acK-4t-uDy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NpS-PG-k1b">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -953,7 +953,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvK-aV-12u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1390" y="-1627"/>
+            <point key="canvasLocation" x="-1873" y="-1627"/>
         </scene>
         <!--Item-->
         <scene sceneID="P2o-aN-Al1">
@@ -1093,14 +1093,46 @@
         <!--Appointments-->
         <scene sceneID="bJ7-yh-274">
             <objects>
-                <viewController id="nCG-ff-l1q" sceneMemberID="viewController">
+                <viewController id="nCG-ff-l1q" customClass="AppointmentsViewController" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SV3-SB-oBf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mh5-Lo-LF1">
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="79D-Lm-AnX">
+                                        <rect key="frame" x="15" y="0.0" width="363" height="614"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6KM-S5-Nc6">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="nCG-ff-l1q" id="hIM-aA-aC6"/>
+                                            <outlet property="delegate" destination="nCG-ff-l1q" id="Jh3-xa-7nI"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A4X-Fr-Jha"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mh5-Lo-LF1" firstAttribute="leading" secondItem="A4X-Fr-Jha" secondAttribute="leading" id="0mX-fY-fJj"/>
+                            <constraint firstItem="Mh5-Lo-LF1" firstAttribute="top" secondItem="A4X-Fr-Jha" secondAttribute="top" id="I4H-hj-ejy"/>
+                            <constraint firstItem="A4X-Fr-Jha" firstAttribute="bottom" secondItem="Mh5-Lo-LF1" secondAttribute="bottom" id="aB1-6k-NB7"/>
+                            <constraint firstItem="A4X-Fr-Jha" firstAttribute="trailing" secondItem="Mh5-Lo-LF1" secondAttribute="trailing" id="qE4-RT-Zso"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Appointments" id="ljC-vo-ffP"/>
+                    <connections>
+                        <outlet property="appointmentsToday" destination="79D-Lm-AnX" id="cjf-Dz-pu8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKg-M6-wPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1580,12 +1612,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kk-Jz-Tce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="-1627"/>
+            <point key="canvasLocation" x="-518" y="-1627"/>
         </scene>
     </scenes>
     <resources>
         <image name="Amit Kumar" width="1465" height="1464"/>
         <image name="Arived" width="551" height="542"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="109"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="eye" width="512" height="512"/>
