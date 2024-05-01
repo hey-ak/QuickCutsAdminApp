@@ -39,6 +39,9 @@
 		A968498E2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */; };
 		A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */; };
 		A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */; };
+		FF8449732BE2278E00B929E6 /* CentreSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8449722BE2278E00B929E6 /* CentreSettingsViewController.swift */; };
+		FF84497C2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84497A2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift */; };
+		FF84497D2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF84497B2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCancelledCollectionCell.xib; sourceTree = "<group>"; };
 		A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCancelledCollectionCell.swift; sourceTree = "<group>"; };
 		A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCompletedCollectionCell.swift; sourceTree = "<group>"; };
+		FF8449722BE2278E00B929E6 /* CentreSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentreSettingsViewController.swift; sourceTree = "<group>"; };
+		FF84497A2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonSettingHeadTableViewCell.swift; sourceTree = "<group>"; };
+		FF84497B2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalonSettingHeadTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,8 @@
 				A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */,
 				A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */,
 				A96849892BE23D2C004523B2 /* BookingCompletedCollectionCell.xib */,
+				FF84497A2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift */,
+				FF84497B2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -197,6 +205,7 @@
 				A96849592BE214CC004523B2 /* CentreVC.swift */,
 				A968495F2BE2176F004523B2 /* ProfileVC.swift */,
 				A96849792BE21C9E004523B2 /* BookingVC.swift */,
+				FF8449722BE2278E00B929E6 /* CentreSettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				A96849502BE21075004523B2 /* DateSelectCollectionViewCell.xib in Resources */,
 				A96849652BE21789004523B2 /* profileHeadTableCell.xib in Resources */,
 				A968496C2BE2186B004523B2 /* dummyTableCell.xib in Resources */,
+				FF84497D2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib in Resources */,
 				A96849672BE21789004523B2 /* ProfileTableCell.xib in Resources */,
 				A96849552BE211DF004523B2 /* AlbumCollectionViewCell.xib in Resources */,
 				A96849342BE20DE5004523B2 /* Base in Resources */,
@@ -289,12 +299,14 @@
 				A96849662BE21789004523B2 /* profileHeadTableCell.swift in Sources */,
 				A96849562BE211DF004523B2 /* AlbumCollectionViewCell.swift in Sources */,
 				A968494F2BE21075004523B2 /* TimeSlotCollectionCell.swift in Sources */,
+				FF8449732BE2278E00B929E6 /* CentreSettingsViewController.swift in Sources */,
 				A96849522BE2113D004523B2 /* ViewExtensions.swift in Sources */,
 				A968494D2BE21075004523B2 /* DateSelectCollectionViewCell.swift in Sources */,
 				A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */,
 				A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */,
 				A96849312BE20DE5004523B2 /* ViewController.swift in Sources */,
 				A968495A2BE214CC004523B2 /* CentreVC.swift in Sources */,
+				FF84497C2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift in Sources */,
 				A968492D2BE20DE5004523B2 /* AppDelegate.swift in Sources */,
 				A96849582BE211F4004523B2 /* AlbumVC.swift in Sources */,
 				A968495E2BE214DA004523B2 /* CentreCollectionViewCell.swift in Sources */,
