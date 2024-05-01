@@ -12,7 +12,7 @@ class AppointmentsViewController: UIViewController {
     
     @IBOutlet weak var appointmentsToday: UICollectionView!{
         didSet{
-            appointmentsToday.registerCellFromNib(cellID: "AppointmentCollectionViewCell")
+            appointmentsToday.registerCellFromNib(cellID: "BookingCollectionCell")
         }
     }
     
@@ -29,7 +29,7 @@ extension AppointmentsViewController: UICollectionViewDelegate,UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AppointmentCollectionViewCell", for: indexPath) as! AppointmentCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCollectionCell", for: indexPath) as! BookingCollectionCell
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
