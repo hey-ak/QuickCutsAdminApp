@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ArB-og-mHO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sfW-SI-jWr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -12,7 +12,7 @@
         <!--Item-->
         <scene sceneID="tba-Xx-ch2">
             <objects>
-                <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QTz-xf-Crw" customClass="SignInVC" customModule="Quick_Cuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QTz-xf-Crw" customClass="SignInVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h5S-24-zIQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@
                                                                         <rect key="frame" x="96.000000000000014" y="12.000000000000002" width="171.33333333333337" height="27.666666666666671"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in With Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJn-Zc-Xo0">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="171.33333333333337" height="27.666666666666668"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="171.33333333333334" height="27.666666666666668"/>
                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -391,7 +391,7 @@
         <!--Date And TimeVC-->
         <scene sceneID="ojT-ZZ-cAM">
             <objects>
-                <viewController storyboardIdentifier="DateAndTimeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RT6-6d-83T" customClass="DateAndTimeVC" customModule="Quick_Cuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DateAndTimeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RT6-6d-83T" customClass="DateAndTimeVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3IJ-ne-yhm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -618,7 +618,7 @@
         <!--Item-->
         <scene sceneID="rcL-p0-Qqu">
             <objects>
-                <viewController id="310-dY-FCc" customClass="AlbumVC" customModule="Quick_Cuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="310-dY-FCc" customClass="AlbumVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9z-Mj-hEC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -687,6 +687,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiV-ZF-hts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2378" y="144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VkP-zJ-XgT">
+            <objects>
+                <navigationController id="sfW-SI-jWr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xlB-6a-gAK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bXu-aR-Q3c" kind="relationship" relationship="rootViewController" id="kuW-Om-Sq5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEf-0y-Wfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2963" y="921"/>
+        </scene>
+        <!--Salon Settings-->
+        <scene sceneID="e9o-Bf-jGh">
+            <objects>
+                <viewController id="bXu-aR-Q3c" customClass="CentreSettingsViewController" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yRS-Z8-rQC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y7O-YS-tdt">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-x1-CbX">
+                                        <rect key="frame" x="15" y="0.0" width="363" height="715"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="bXu-aR-Q3c" id="7Fn-9o-AUL"/>
+                                            <outlet property="delegate" destination="bXu-aR-Q3c" id="Wkk-wf-Gc1"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PCT-em-w4V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y7O-YS-tdt" firstAttribute="top" secondItem="PCT-em-w4V" secondAttribute="top" id="1V4-z4-xxn"/>
+                            <constraint firstItem="y7O-YS-tdt" firstAttribute="leading" secondItem="PCT-em-w4V" secondAttribute="leading" id="7fN-0z-tb0"/>
+                            <constraint firstItem="PCT-em-w4V" firstAttribute="bottom" secondItem="y7O-YS-tdt" secondAttribute="bottom" id="M9L-Wd-vQJ"/>
+                            <constraint firstItem="PCT-em-w4V" firstAttribute="trailing" secondItem="y7O-YS-tdt" secondAttribute="trailing" id="Uml-Wx-Cno"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Salon Settings" id="uCs-M3-5Ux"/>
+                    <connections>
+                        <outlet property="CentreTableView" destination="Ugf-x1-CbX" id="PYV-cx-gbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9s-U7-AEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2963" y="1599"/>
         </scene>
         <!--Item-->
         <scene sceneID="gJE-AE-JHs">
@@ -819,7 +879,7 @@
         <!--Item-->
         <scene sceneID="P2o-aN-Al1">
             <objects>
-                <viewController id="qWV-DN-8OK" customClass="CentreVC" customModule="Quick_Cuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qWV-DN-8OK" customClass="CentreVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FtX-XX-dZJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -912,7 +972,7 @@
         <!--Profile-->
         <scene sceneID="S6g-4C-I7E">
             <objects>
-                <viewController storyboardIdentifier="ProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ArB-og-mHO" customClass="ProfileVC" customModule="Quick_Cuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ArB-og-mHO" customClass="ProfileVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HDP-WJ-uZs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
