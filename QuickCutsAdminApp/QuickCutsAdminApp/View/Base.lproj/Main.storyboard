@@ -258,7 +258,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="signInButtonDidTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="g12-lT-j7b"/>
+                                                                    <action selector="signInButtonDidTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="mo4-hh-VZp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -351,7 +351,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <action selector="dontHaveAccButtonDidTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="XuK-34-hbU"/>
+                                                            <action selector="dontHaveAccButtonTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="odR-Ul-HoT"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -615,10 +615,10 @@
             </objects>
             <point key="canvasLocation" x="-2364" y="1187"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--CustomUI Tab Bar Controller-->
         <scene sceneID="0A3-b8-IP1">
             <objects>
-                <tabBarController id="7eU-oO-NSA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CustomUITabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7eU-oO-NSA" customClass="CustomUITabBarController" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gKs-CI-QTd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1220,7 +1220,7 @@
         <!--Item-->
         <scene sceneID="DMV-Tf-ff6">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u0l-k8-VBe" customClass="SignUpVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUPVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u0l-k8-VBe" customClass="SignUPVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xcq-VX-iYf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1536,7 +1536,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="signUpDidTapped:" destination="u0l-k8-VBe" eventType="touchUpInside" id="8Sf-0j-v2t"/>
+                                                                            <action selector="SignUpDidTapped:" destination="u0l-k8-VBe" eventType="touchUpInside" id="0u3-Kr-hKD"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -1578,7 +1578,7 @@
                                                                     </attributedString>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="alradyMemeberDidTapped:" destination="u0l-k8-VBe" eventType="touchUpInside" id="Ebc-I9-e60"/>
+                                                                    <action selector="alreadyAMemberDidTapped:" destination="u0l-k8-VBe" eventType="touchUpInside" id="AbG-KO-THf"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -1620,9 +1620,9 @@
         <image name="Arived" width="551" height="542"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="109"/>
-        <image name="chevron.backward" catalog="system" width="32" height="32"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="eye" width="512" height="512"/>
-        <image name="house.fill" catalog="system" width="32" height="32"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
