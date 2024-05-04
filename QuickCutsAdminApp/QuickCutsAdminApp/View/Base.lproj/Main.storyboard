@@ -236,7 +236,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jtn-Iv-8dg">
-                                                <rect key="frame" x="0.0" y="461.00000000000006" width="393" height="123.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="461" width="393" height="72"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QXO-Rb-PSE">
                                                         <rect key="frame" x="15" y="0.0" width="363" height="52"/>
@@ -275,53 +275,14 @@
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S35-Iy-hjO">
-                                                        <rect key="frame" x="15" y="72" width="363" height="51.666666666666657"/>
-                                                        <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MW-jo-5Qc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="51.666666666666664"/>
-                                                                <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COO-lZ-MBa">
-                                                                        <rect key="frame" x="96.000000000000014" y="12.000000000000002" width="171.33333333333337" height="27.666666666666671"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in With Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJn-Zc-Xo0">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="171.33333333333334" height="27.666666666666668"/>
-                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                                                <nil key="textColor"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                    </stackView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="6MW-jo-5Qc" secondAttribute="height" multiplier="357:51" id="5XU-7c-FjG"/>
-                                                                    <constraint firstItem="COO-lZ-MBa" firstAttribute="centerY" secondItem="6MW-jo-5Qc" secondAttribute="centerY" id="Fth-gr-Q4v"/>
-                                                                    <constraint firstItem="COO-lZ-MBa" firstAttribute="centerX" secondItem="6MW-jo-5Qc" secondAttribute="centerX" id="LSn-iH-jvz"/>
-                                                                    <constraint firstItem="COO-lZ-MBa" firstAttribute="top" secondItem="6MW-jo-5Qc" secondAttribute="top" constant="12" id="d27-hz-Olc"/>
-                                                                </constraints>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="13"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </view>
-                                                        </subviews>
-                                                    </stackView>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-cI-TRd">
-                                                <rect key="frame" x="0.0" y="584.66666666666663" width="393" height="139.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="533" width="393" height="191"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4t-LO-kTF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="139.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="191"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
