@@ -14,12 +14,16 @@ class BookingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    @objc func RescheduleButton(){
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "DateAndTimeVC") as! DateAndTimeVC
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
     @IBAction func segmentControlDidChange(_ sender: UISegmentedControl) {
         bookingCollectionView.reloadData()
     }
 
 }
+
 
 extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
@@ -32,6 +36,9 @@ extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         switch currentSegment {
         case 0:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCollectionCell", for: indexPath) as? BookingCollectionCell {
+                
+                cell.RescheduleButton.addTarget(self, action: #selector(RescheduleButton),for: .touchUpInside)
+                
                 return cell
             }
 

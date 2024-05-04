@@ -9,7 +9,12 @@ import UIKit
 
 class BookingCollectionCell: UICollectionViewCell {
 
+    
+    @IBOutlet weak var RescheduleButton: UIButton!
+    
     @IBOutlet weak var cancelServiceButton: UIButton!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

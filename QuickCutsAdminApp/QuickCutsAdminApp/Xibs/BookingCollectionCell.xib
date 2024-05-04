@@ -76,7 +76,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Decline">
+                                                        <fragment content="Cancel">
                                                             <attributes>
                                                                 <color key="NSColor" red="1" green="0.31585747003555298" blue="0.38664022088050842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" size="19" name="HelveticaNeue"/>
@@ -239,7 +239,8 @@
             </constraints>
             <size key="customSize" width="369" height="350"/>
             <connections>
-                <outlet property="cancelServiceButton" destination="SSc-hX-4Xa" id="vcz-Pf-KwN"/>
+                <outlet property="RescheduleButton" destination="SSc-hX-4Xa" id="rJJ-Rj-q1S"/>
+                <outlet property="cancelServiceButton" destination="FOc-XK-72h" id="fbO-eU-Eav"/>
             </connections>
             <point key="canvasLocation" x="156.4885496183206" y="94.366197183098592"/>
         </collectionViewCell>
