@@ -21,6 +21,10 @@ class AppointmentsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @objc func RescheduleButton(){
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "DateAndTimeVC") as! DateAndTimeVC
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
 
 }
 extension AppointmentsViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -30,6 +34,9 @@ extension AppointmentsViewController: UICollectionViewDelegate,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCollectionCell", for: indexPath) as! BookingCollectionCell
+        
+        cell.RescheduleButton.addTarget(self, action: #selector(RescheduleButton),for: .touchUpInside)
+        
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -40,8 +40,6 @@
 		A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */; };
 		A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */; };
 		FF3080672BE26D17005CCBB2 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3080662BE26D17005CCBB2 /* AppointmentsViewController.swift */; };
-		FF30806A2BE26E54005CCBB2 /* AppointmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3080682BE26E54005CCBB2 /* AppointmentCollectionViewCell.swift */; };
-		FF30806B2BE26E54005CCBB2 /* AppointmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3080692BE26E54005CCBB2 /* AppointmentCollectionViewCell.xib */; };
 		FF46EB122BE650FC0073BC46 /* CustomUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46EB112BE650FC0073BC46 /* CustomUITabBarController.swift */; };
 		FF46EB142BE65C660073BC46 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46EB132BE65C660073BC46 /* SignInVC.swift */; };
 		FF46EB162BE65DC50073BC46 /* SignUPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46EB152BE65DC50073BC46 /* SignUPVC.swift */; };
@@ -86,8 +84,6 @@
 		A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCancelledCollectionCell.swift; sourceTree = "<group>"; };
 		A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCompletedCollectionCell.swift; sourceTree = "<group>"; };
 		FF3080662BE26D17005CCBB2 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
-		FF3080682BE26E54005CCBB2 /* AppointmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCollectionViewCell.swift; sourceTree = "<group>"; };
-		FF3080692BE26E54005CCBB2 /* AppointmentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF46EB112BE650FC0073BC46 /* CustomUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITabBarController.swift; sourceTree = "<group>"; };
 		FF46EB132BE65C660073BC46 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		FF46EB152BE65DC50073BC46 /* SignUPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPVC.swift; sourceTree = "<group>"; };
@@ -182,8 +178,6 @@
 				A96849892BE23D2C004523B2 /* BookingCompletedCollectionCell.xib */,
 				FF84497A2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift */,
 				FF84497B2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib */,
-				FF3080682BE26E54005CCBB2 /* AppointmentCollectionViewCell.swift */,
-				FF3080692BE26E54005CCBB2 /* AppointmentCollectionViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -290,7 +284,6 @@
 				A968498D2BE23D2C004523B2 /* BookingCompletedCollectionCell.xib in Resources */,
 				A96849362BE20DE6004523B2 /* Assets.xcassets in Resources */,
 				A96849392BE20DE6004523B2 /* Base in Resources */,
-				FF30806B2BE26E54005CCBB2 /* AppointmentCollectionViewCell.xib in Resources */,
 				A96849502BE21075004523B2 /* DateSelectCollectionViewCell.xib in Resources */,
 				A96849652BE21789004523B2 /* profileHeadTableCell.xib in Resources */,
 				A968496C2BE2186B004523B2 /* dummyTableCell.xib in Resources */,
@@ -325,7 +318,6 @@
 				A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */,
 				A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */,
 				A96849312BE20DE5004523B2 /* ViewController.swift in Sources */,
-				FF30806A2BE26E54005CCBB2 /* AppointmentCollectionViewCell.swift in Sources */,
 				A968495A2BE214CC004523B2 /* CentreVC.swift in Sources */,
 				FF84497C2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift in Sources */,
 				A968492D2BE20DE5004523B2 /* AppDelegate.swift in Sources */,
