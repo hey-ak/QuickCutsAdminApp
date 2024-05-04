@@ -1386,6 +1386,7 @@
                                                                                     <constraint firstAttribute="width" secondItem="UB8-lR-HvK" secondAttribute="height" multiplier="357:51" id="FQo-YB-efq"/>
                                                                                     <constraint firstItem="WJF-9J-6db" firstAttribute="top" secondItem="UB8-lR-HvK" secondAttribute="top" id="T3Q-2V-E0h"/>
                                                                                     <constraint firstItem="WJF-9J-6db" firstAttribute="leading" secondItem="UB8-lR-HvK" secondAttribute="leading" constant="20" id="XTd-ad-Xh5"/>
+                                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WJF-9J-6db" secondAttribute="trailing" constant="20" symbolic="YES" id="wPL-eL-tYU"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1588,10 +1589,10 @@
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="5E5E5E">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="D5D5D5">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
