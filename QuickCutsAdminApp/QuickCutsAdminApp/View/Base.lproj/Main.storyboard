@@ -596,11 +596,11 @@
             </objects>
             <point key="canvasLocation" x="-1871" y="-908"/>
         </scene>
-        <!--Appointments-->
+        <!--Today-->
         <scene sceneID="eYJ-i7-SwF">
             <objects>
                 <navigationController id="TAb-HR-Of5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" id="acK-4t-uDy"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="house.fill" catalog="system" id="acK-4t-uDy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NpS-PG-k1b">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1580,7 +1580,6 @@
     <resources>
         <image name="Amit Kumar" width="1465" height="1464"/>
         <image name="Arived" width="551" height="542"/>
-        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="109"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="eye" width="512" height="512"/>

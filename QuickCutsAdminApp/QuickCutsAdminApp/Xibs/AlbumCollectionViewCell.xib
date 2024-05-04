@@ -83,6 +83,11 @@
                 <constraint firstAttribute="trailing" secondItem="AfL-GB-3Ct" secondAttribute="trailing" id="yzd-FT-126"/>
             </constraints>
             <size key="customSize" width="180" height="234"/>
+            <connections>
+                <outlet property="Album" destination="XRT-Tg-tg4" id="MF7-s2-dBk"/>
+                <outlet property="albumName" destination="mXh-aG-Pjd" id="VDD-pV-gh4"/>
+                <outlet property="albumPhotosNumber" destination="IyO-De-Dcn" id="T7Q-Kf-kG8"/>
+            </connections>
             <point key="canvasLocation" x="222.90076335877862" y="83.098591549295776"/>
         </collectionViewCell>
     </objects>
