@@ -25,6 +25,11 @@ class AppointmentsViewController: UIViewController {
         let nextVC = storyboard?.instantiateViewController(withIdentifier: "DateAndTimeVC") as! DateAndTimeVC
         navigationController?.pushViewController(nextVC, animated: true)
     }
+    @objc func cancelServiceButton(){
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "CancelScreenViewController") as! CancelScreenViewController
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
 
 }
 extension AppointmentsViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -36,6 +41,7 @@ extension AppointmentsViewController: UICollectionViewDelegate,UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCollectionCell", for: indexPath) as! BookingCollectionCell
         
         cell.RescheduleButton.addTarget(self, action: #selector(RescheduleButton),for: .touchUpInside)
+        cell.cancelServiceButton.addTarget(self, action: #selector(cancelServiceButton),for: .touchUpInside)
         
         return cell
     }

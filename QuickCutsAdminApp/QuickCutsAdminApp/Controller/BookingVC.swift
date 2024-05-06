@@ -21,6 +21,11 @@ class BookingVC: UIViewController {
     @IBAction func segmentControlDidChange(_ sender: UISegmentedControl) {
         bookingCollectionView.reloadData()
     }
+    @objc func cancelServiceButton(){
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "CancelScreenViewController") as! CancelScreenViewController
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
 
 }
 
@@ -38,7 +43,7 @@ extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCollectionCell", for: indexPath) as? BookingCollectionCell {
                 
                 cell.RescheduleButton.addTarget(self, action: #selector(RescheduleButton),for: .touchUpInside)
-                
+                cell.cancelServiceButton.addTarget(self, action: #selector(cancelServiceButton),for: .touchUpInside)
                 return cell
             }
 
