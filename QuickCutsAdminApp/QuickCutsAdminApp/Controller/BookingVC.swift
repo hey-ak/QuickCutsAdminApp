@@ -16,6 +16,7 @@ class BookingVC: UIViewController {
     }
     @objc func RescheduleButton(){
         let nextVC = storyboard?.instantiateViewController(withIdentifier: "DateAndTimeVC") as! DateAndTimeVC
+        nextVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func segmentControlDidChange(_ sender: UISegmentedControl) {
@@ -23,6 +24,7 @@ class BookingVC: UIViewController {
     }
     @objc func cancelServiceButton(){
         let nextVC = storyboard?.instantiateViewController(withIdentifier: "CancelScreenViewController") as! CancelScreenViewController
+        nextVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(nextVC, animated: true)
     }
     

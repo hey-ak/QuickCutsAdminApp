@@ -839,7 +839,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvK-aV-12u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1873" y="-1627"/>
+            <point key="canvasLocation" x="-2364" y="-1627"/>
         </scene>
         <!--Item-->
         <scene sceneID="P2o-aN-Al1">
@@ -1501,10 +1501,10 @@
             </objects>
             <point key="canvasLocation" x="-518" y="-1627"/>
         </scene>
-        <!--Client Arrived-->
+        <!--Service Declined-->
         <scene sceneID="5Ca-ne-rH2">
             <objects>
-                <viewController storyboardIdentifier="CancelScreenViewController" title="Client Arrived" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gSa-oo-L9M" customClass="CancelScreenViewController" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CancelScreenViewController" title="Service Declined" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gSa-oo-L9M" customClass="CancelScreenViewController" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cX5-0H-54M">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1628,7 +1628,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgq-Cq-etd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-518" y="-908"/>
+            <point key="canvasLocation" x="-1390" y="-1627"/>
         </scene>
     </scenes>
     <resources>
