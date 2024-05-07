@@ -583,11 +583,11 @@
             </objects>
             <point key="canvasLocation" x="-2363" y="-174"/>
         </scene>
-        <!--Photos-->
+        <!--Albums-->
         <scene sceneID="aYb-uW-Vjm">
             <objects>
                 <navigationController id="xhS-TW-cCa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Photos" image="photo" catalog="system" id="8Tb-UT-Kky"/>
+                    <tabBarItem key="tabBarItem" title="Albums" image="photo" catalog="system" id="8Tb-UT-Kky"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xn7-ce-Noi">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -603,7 +603,7 @@
             </objects>
             <point key="canvasLocation" x="-1389" y="-175"/>
         </scene>
-        <!--Album-->
+        <!--Albums-->
         <scene sceneID="rcL-p0-Qqu">
             <objects>
                 <viewController id="310-dY-FCc" customClass="AlbumVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -643,7 +643,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Photos" image="photo" catalog="system" id="OgY-Td-wkP"/>
-                    <navigationItem key="navigationItem" title="Album" id="kHO-ij-Ekk"/>
+                    <navigationItem key="navigationItem" title="Albums" id="kHO-ij-Ekk"/>
                     <connections>
                         <outlet property="AlbumCollection" destination="JaM-kK-738" id="7MJ-lv-9S1"/>
                     </connections>
