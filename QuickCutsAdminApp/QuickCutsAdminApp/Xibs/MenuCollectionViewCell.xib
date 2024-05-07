@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="QuickCutsAdminApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjf-z1-5w1">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="101"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3J0-X8-iC8">
+                                <rect key="frame" x="18" y="16.333333333333336" width="79.333333333333329" height="68.666666666666657"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8S-tE-PRP">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="34.333333333333336"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Haircut"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-o3-g6S">
+                                        <rect key="frame" x="6.3333333333333357" y="34.333333333333329" width="66.666666666666657" height="34.333333333333329"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="₹ 100"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3J0-X8-iC8" firstAttribute="centerY" secondItem="Mjf-z1-5w1" secondAttribute="centerY" id="Qu4-iz-7Lu"/>
+                            <constraint firstItem="3J0-X8-iC8" firstAttribute="centerX" secondItem="Mjf-z1-5w1" secondAttribute="centerX" id="olu-gc-jtV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mjf-z1-5w1" secondAttribute="bottom" id="1XJ-wS-wtg"/>
+                <constraint firstItem="Mjf-z1-5w1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2in-bO-KF7"/>
+                <constraint firstItem="Mjf-z1-5w1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PMe-q0-bkX"/>
+                <constraint firstAttribute="trailing" secondItem="Mjf-z1-5w1" secondAttribute="trailing" id="Xfq-GG-X6q"/>
+                <constraint firstItem="Mjf-z1-5w1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="wC9-BB-Myg"/>
+                <constraint firstItem="Mjf-z1-5w1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yeT-zb-jXB"/>
+            </constraints>
+            <point key="canvasLocation" x="91.603053435114504" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+</document>
