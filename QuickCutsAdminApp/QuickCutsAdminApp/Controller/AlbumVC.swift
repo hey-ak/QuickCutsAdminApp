@@ -15,6 +15,11 @@ class AlbumVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @objc func Album(){
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "CentreVC") as! CentreVC
+        nextVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
 
 }
 
@@ -27,6 +32,16 @@ extension AlbumVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCollectionViewCell", for: indexPath) as! AlbumCollectionViewCell
+        
+        
+        // This method is similar to
+        //cell.RescheduleButton.addTarget(self, action: #selector(RescheduleButton),for: .touchUpInside)
+        // But for UIimageView
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Album))
+        cell.Album.isUserInteractionEnabled = true
+        cell.Album.addGestureRecognizer(tapGestureRecognizer)
+
+        
         return cell
     }
     
