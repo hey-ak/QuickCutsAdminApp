@@ -1590,6 +1590,185 @@
             </objects>
             <point key="canvasLocation" x="-518" y="506"/>
         </scene>
+        <!--Add Services-->
+        <scene sceneID="FqX-Im-a27">
+            <objects>
+                <viewController storyboardIdentifier="AddServicesVC" title="Add Services" id="0Vh-ff-1aM" customClass="AddServicesVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HxD-2P-S8C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-cW-Mlp">
+                                <rect key="frame" x="0.0" y="58.999999999999972" width="393" height="426.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-1Q-EDo">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="137"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIy-GX-BTw">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="137"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bam-Xj-WIt">
+                                        <rect key="frame" x="0.0" y="137" width="393" height="197.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cTy-cW-IqE">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="88.666666666666671"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-Nc-Qum">
+                                                        <rect key="frame" x="15" y="0.0" width="363" height="27"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhq-L8-K7o">
+                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="27"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OUU-gZ-bzh">
+                                                        <rect key="frame" x="15" y="37" width="363" height="51.666666666666657"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZy-EB-EUn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="51.666666666666664"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Service" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usy-it-WBY">
+                                                                        <rect key="frame" x="20" y="0.0" width="323" height="51.666666666666664"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                                <color key="value" name="5E5E5E"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="D5D5D5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="MZy-EB-EUn" secondAttribute="height" multiplier="357:51" id="HXi-2K-xq0"/>
+                                                                    <constraint firstItem="usy-it-WBY" firstAttribute="top" secondItem="MZy-EB-EUn" secondAttribute="top" id="S4Y-88-Bp6"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="usy-it-WBY" secondAttribute="bottom" id="oCI-1n-fdf"/>
+                                                                    <constraint firstItem="usy-it-WBY" firstAttribute="leading" secondItem="MZy-EB-EUn" secondAttribute="leading" constant="20" id="vZ9-G8-E12"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="usy-it-WBY" secondAttribute="trailing" constant="20" id="xb7-1r-wrm"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-r8-XeQ">
+                                                <rect key="frame" x="0.0" y="108.66666666666669" width="393" height="89"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IUc-sD-hpt">
+                                                        <rect key="frame" x="15" y="0.0" width="363" height="27"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-yT-Isy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="27"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="baf-P5-INB">
+                                                        <rect key="frame" x="15" y="37" width="363" height="52"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmX-1x-VGk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="52"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wni-te-o5q">
+                                                                        <rect key="frame" x="20" y="0.0" width="122" height="52"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                                <color key="value" name="5E5E5E"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="D5D5D5"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Wni-te-o5q" firstAttribute="leading" secondItem="QmX-1x-VGk" secondAttribute="leading" constant="20" id="5L1-rV-hig"/>
+                                                                    <constraint firstAttribute="width" secondItem="QmX-1x-VGk" secondAttribute="height" multiplier="357:51" id="6Q5-P1-6zA"/>
+                                                                    <constraint firstItem="Wni-te-o5q" firstAttribute="top" secondItem="QmX-1x-VGk" secondAttribute="top" id="fTT-vc-VAN"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Wni-te-o5q" secondAttribute="bottom" id="rpD-1o-eOD"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WNe-Pd-pfC">
+                                        <rect key="frame" x="0.0" y="334.66666666666669" width="393" height="91.666666666666686"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-K3-4xN">
+                                                <rect key="frame" x="15" y="0.0" width="363" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ZEa-nx-NoY"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uMT-2a-PjH">
+                                                <rect key="frame" x="15" y="40" width="363" height="51.666666666666657"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-gV-SaJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="363" height="51.666666666666664"/>
+                                                        <color key="backgroundColor" red="0.92549019610000005" green="0.43137254899999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="TBC-gV-SaJ" secondAttribute="height" multiplier="357:51" id="Jki-9z-jA1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Add Service">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q3g-Mr-doy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OfL-1Q-EDo" firstAttribute="height" secondItem="Q3g-Mr-doy" secondAttribute="height" multiplier="0.180282" id="BqL-XN-bXy"/>
+                            <constraint firstItem="kFL-cW-Mlp" firstAttribute="leading" secondItem="Q3g-Mr-doy" secondAttribute="leading" id="TFI-Qm-Ky9"/>
+                            <constraint firstItem="kFL-cW-Mlp" firstAttribute="trailing" secondItem="Q3g-Mr-doy" secondAttribute="trailing" id="al8-yZ-fwt"/>
+                            <constraint firstItem="kFL-cW-Mlp" firstAttribute="top" secondItem="Q3g-Mr-doy" secondAttribute="top" id="pOc-IV-Gzq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BZN-GH-0j6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGo-0n-NiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-518" y="1187"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Amit Kumar" width="1465" height="1464"/>
