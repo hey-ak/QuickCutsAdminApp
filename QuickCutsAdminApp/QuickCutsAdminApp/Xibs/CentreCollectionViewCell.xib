@@ -57,6 +57,9 @@
                 <constraint firstItem="DFb-mG-g8p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ywp-c6-5Kk"/>
             </constraints>
             <size key="customSize" width="284" height="290"/>
+            <connections>
+                <outlet property="centreImage" destination="f3w-jm-G4X" id="Bzb-Vt-EzG"/>
+            </connections>
             <point key="canvasLocation" x="233.58778625954199" y="48.591549295774648"/>
         </collectionViewCell>
     </objects>

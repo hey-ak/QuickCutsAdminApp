@@ -94,6 +94,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="salonImage" destination="gqJ-XL-eAB" id="mmD-F9-gxZ"/>
+                <outlet property="salonName" destination="W7j-c9-7QI" id="fhH-X4-ug4"/>
+                <outlet property="salonPhoneNumberLabel" destination="bU2-vu-sVQ" id="63W-rE-pwI"/>
+            </connections>
             <point key="canvasLocation" x="360.30534351145036" y="32.394366197183103"/>
         </tableViewCell>
     </objects>

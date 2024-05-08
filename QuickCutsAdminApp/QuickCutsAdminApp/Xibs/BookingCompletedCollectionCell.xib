@@ -210,6 +210,14 @@
                 <constraint firstItem="1J3-eX-26g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qjo-u9-UGJ"/>
             </constraints>
             <size key="customSize" width="372" height="260"/>
+            <connections>
+                <outlet property="completedServiceDateAndTimeLabel" destination="xx5-sq-lrN" id="Gve-mB-bVC"/>
+                <outlet property="completedServiceDurationLabel" destination="Dbg-Sh-zRP" id="0QM-AX-5RZ"/>
+                <outlet property="completedServiceID" destination="7Tb-Q3-MVf" id="hHB-Va-smi"/>
+                <outlet property="completedUserImage" destination="dBb-FC-mgZ" id="JBz-eh-nVA"/>
+                <outlet property="completedUserName" destination="mb7-2S-7Zh" id="gUI-dv-ybS"/>
+                <outlet property="completedUserServicesLabel" destination="EUz-qv-ov1" id="pta-tl-T1z"/>
+            </connections>
             <point key="canvasLocation" x="158.77862595419847" y="62.676056338028175"/>
         </collectionViewCell>
     </objects>

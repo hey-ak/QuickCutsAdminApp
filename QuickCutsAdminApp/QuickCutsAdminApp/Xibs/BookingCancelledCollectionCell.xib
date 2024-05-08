@@ -178,6 +178,14 @@
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iDP-HD-Bae" secondAttribute="bottom" id="pAd-mf-7HP"/>
             </constraints>
             <size key="customSize" width="323" height="293"/>
+            <connections>
+                <outlet property="cancelledCustomerName" destination="UiI-0l-bcz" id="eiG-yf-vKA"/>
+                <outlet property="cancelledDateAndTimeLabel" destination="Ifj-6W-aZ6" id="hfp-tG-agK"/>
+                <outlet property="cancelledServiceDurationLabel" destination="Crg-6f-XMS" id="kPU-mE-Wjc"/>
+                <outlet property="cancelledServiceIDLabel" destination="22P-CV-zCt" id="aaa-hl-XxH"/>
+                <outlet property="cancelledServiceNameLabel" destination="f4W-Qf-fp2" id="EoA-D2-10s"/>
+                <outlet property="cancelledUserImage" destination="xHo-r8-ZJn" id="9XE-A0-aIe"/>
+            </connections>
             <point key="canvasLocation" x="121.37404580152672" y="74.295774647887328"/>
         </collectionViewCell>
     </objects>

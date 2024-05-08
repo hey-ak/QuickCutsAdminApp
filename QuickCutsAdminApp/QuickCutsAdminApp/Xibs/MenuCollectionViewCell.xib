@@ -59,7 +59,11 @@
                 <constraint firstItem="Mjf-z1-5w1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="wC9-BB-Myg"/>
                 <constraint firstItem="Mjf-z1-5w1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yeT-zb-jXB"/>
             </constraints>
-            <point key="canvasLocation" x="91.603053435114504" y="19.718309859154932"/>
+            <connections>
+                <outlet property="menuServiceCost" destination="NZO-o3-g6S" id="SjS-sa-bqd"/>
+                <outlet property="menuServiceName" destination="a8S-tE-PRP" id="Yhj-lx-fxU"/>
+            </connections>
+            <point key="canvasLocation" x="90.839694656488547" y="19.366197183098592"/>
         </collectionViewCell>
     </objects>
 </document>

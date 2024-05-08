@@ -9,6 +9,8 @@ import UIKit
 
 class CentreCollectionViewCell: UICollectionViewCell {
 
+    
+    @IBOutlet weak var centreImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -240,7 +240,13 @@
             <size key="customSize" width="369" height="350"/>
             <connections>
                 <outlet property="RescheduleButton" destination="SSc-hX-4Xa" id="rJJ-Rj-q1S"/>
+                <outlet property="appointmentDateAndTimeLabel" destination="hMa-T2-hAU" id="fXh-e6-G6o"/>
                 <outlet property="cancelServiceButton" destination="FOc-XK-72h" id="fbO-eU-Eav"/>
+                <outlet property="customerImage" destination="t6x-fz-khi" id="T5n-zh-nUV"/>
+                <outlet property="customerNameLabel" destination="zQU-9g-PlP" id="yCf-Mc-zxz"/>
+                <outlet property="customerServiceDuration" destination="aSK-Kk-q44" id="VwU-7t-IX8"/>
+                <outlet property="customerServiceId" destination="T8x-do-uNv" id="4Af-O0-uzf"/>
+                <outlet property="customerServiceNameLabel" destination="4Ng-zD-aci" id="RHj-52-oUu"/>
             </connections>
             <point key="canvasLocation" x="156.4885496183206" y="94.366197183098592"/>
         </collectionViewCell>
