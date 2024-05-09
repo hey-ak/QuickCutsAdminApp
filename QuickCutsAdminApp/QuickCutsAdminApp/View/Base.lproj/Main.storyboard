@@ -544,7 +544,7 @@
         <scene sceneID="Cm7-Dt-9Hb">
             <objects>
                 <navigationController title="Bookings" id="oGj-vL-8qo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bookings" image="calendar.badge.plus" catalog="system" id="wSo-6g-6GV"/>
+                    <tabBarItem key="tabBarItem" title="Bookings" image="calendar.badge.clock" catalog="system" id="wSo-6g-6GV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="chi-a6-XhV">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -629,11 +629,11 @@
             </objects>
             <point key="canvasLocation" x="-1390" y="506"/>
         </scene>
-        <!--Item-->
+        <!--Menu-->
         <scene sceneID="5ga-D8-Z4n">
             <objects>
                 <navigationController id="D1N-sv-fKZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="YOC-cs-dhs"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menucard.fill" catalog="system" id="YOC-cs-dhs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="kVf-kf-8SI">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1001,7 +1001,7 @@
                             <constraint firstItem="xuF-hF-HiY" firstAttribute="trailing" secondItem="nIh-hE-XK0" secondAttribute="trailing" id="xNf-4g-TlD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Booking" image="calendar.badge.plus" catalog="system" id="3Jj-65-thM"/>
+                    <tabBarItem key="tabBarItem" title="Booking" image="calendar.badge.clock" catalog="system" id="3Jj-65-thM"/>
                     <navigationItem key="navigationItem" title="Bookings" id="0Af-3z-PQe"/>
                     <connections>
                         <outlet property="bookingCollectionView" destination="9ox-4X-LVc" id="MYs-Wg-0ha"/>
@@ -1506,14 +1506,6 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9M-t5-Zam">
                                                 <rect key="frame" x="0.0" y="276.99999999999994" width="393" height="102.33333333333331"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Declined" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6h-Fs-weD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="102.33333333333333"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -1578,9 +1570,13 @@
                             <constraint firstItem="Hxg-aI-w9U" firstAttribute="leading" secondItem="fNc-We-Eck" secondAttribute="leading" id="v01-Gx-gdE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="b6Y-56-bbf"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menucard.fill" catalog="system" id="b6Y-56-bbf"/>
                     <navigationItem key="navigationItem" title="Menu" id="whr-R3-K8F">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hgg-A8-QJy"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hgg-A8-QJy">
+                            <connections>
+                                <action selector="addToMenuTapped:" destination="f8n-wZ-AgO" id="EYN-Co-XoT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuCollectionView" destination="aVo-xb-JpH" id="Nke-iX-8ub"/>
@@ -1593,7 +1589,7 @@
         <!--Add Services-->
         <scene sceneID="FqX-Im-a27">
             <objects>
-                <viewController storyboardIdentifier="AddServicesVC" title="Add Services" id="0Vh-ff-1aM" customClass="AddServicesVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddServicesVC" title="Add Services" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Vh-ff-1aM" customClass="AddServicesVC" customModule="QuickCutsAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HxD-2P-S8C">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1773,9 +1769,10 @@
     <resources>
         <image name="Amit Kumar" width="1465" height="1464"/>
         <image name="Arived" width="551" height="542"/>
-        <image name="calendar.badge.plus" catalog="system" width="128" height="109"/>
+        <image name="calendar.badge.clock" catalog="system" width="128" height="109"/>
         <image name="eye" width="512" height="512"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="menucard.fill" catalog="system" width="105" height="128"/>
         <image name="minus.circle" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo" catalog="system" width="128" height="93"/>

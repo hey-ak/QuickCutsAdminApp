@@ -8,7 +8,7 @@
 import UIKit
 
 class MenuVC: UIViewController {
-
+    
     @IBOutlet weak var menuCollectionView: UICollectionView!{
         didSet{
             menuCollectionView.registerCellFromNib(cellID: "MenuCollectionViewCell")
@@ -19,6 +19,13 @@ class MenuVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func addToMenuTapped(_ sender: Any) {
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "AddServicesVC") as! AddServicesVC
+        nextVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     
 }
