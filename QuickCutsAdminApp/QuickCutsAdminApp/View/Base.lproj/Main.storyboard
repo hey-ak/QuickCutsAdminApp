@@ -206,6 +206,9 @@
                                                                                         </fragment>
                                                                                     </attributedString>
                                                                                 </state>
+                                                                                <connections>
+                                                                                    <action selector="forgotPassDidTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="hZ6-LD-RMd"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,7 +261,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="signInButtonDidTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="mo4-hh-VZp"/>
+                                                                    <action selector="signInButtonDidTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="dfD-tc-uhM"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -312,7 +315,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <action selector="dontHaveAccButtonTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="odR-Ul-HoT"/>
+                                                            <action selector="dontHaveAccButtonTapped:" destination="QTz-xf-Crw" eventType="touchUpInside" id="RGI-Mm-dpM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -344,6 +347,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="house.fill" catalog="system" id="K62-aD-F7p"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="EYJ-Vo-5LU" id="qoi-jc-eYc"/>
+                        <outlet property="passwordTextField" destination="qvs-gM-hRW" id="kLI-fF-9nS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpw-7J-FUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1188,7 +1195,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-xU-6EM">
                                                                         <rect key="frame" x="15" y="0.0" width="363" height="27"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-mX-nTr">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-mX-nTr">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="363" height="27"/>
                                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1202,8 +1209,8 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UB8-lR-HvK">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="363" height="52"/>
                                                                                 <subviews>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJF-9J-6db">
-                                                                                        <rect key="frame" x="20" y="0.0" width="139.66666666666666" height="52"/>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJF-9J-6db">
+                                                                                        <rect key="frame" x="20" y="0.0" width="323" height="52"/>
                                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <textInputTraits key="textInputTraits"/>
@@ -1220,7 +1227,7 @@
                                                                                     <constraint firstAttribute="width" secondItem="UB8-lR-HvK" secondAttribute="height" multiplier="357:51" id="FQo-YB-efq"/>
                                                                                     <constraint firstItem="WJF-9J-6db" firstAttribute="top" secondItem="UB8-lR-HvK" secondAttribute="top" id="T3Q-2V-E0h"/>
                                                                                     <constraint firstItem="WJF-9J-6db" firstAttribute="leading" secondItem="UB8-lR-HvK" secondAttribute="leading" constant="20" id="XTd-ad-Xh5"/>
-                                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WJF-9J-6db" secondAttribute="trailing" constant="20" symbolic="YES" id="wPL-eL-tYU"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="WJF-9J-6db" secondAttribute="trailing" constant="20" symbolic="YES" id="wPL-eL-tYU"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1405,6 +1412,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="house.fill" catalog="system" id="zXE-60-C8F"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="WJF-9J-6db" id="NyF-Sz-mSf"/>
+                        <outlet property="locationTextField" destination="YTN-kL-1ix" id="nVK-Me-i6Y"/>
+                        <outlet property="nameTextField" destination="3VD-74-zEK" id="2tF-s7-FQ2"/>
+                        <outlet property="passwordTextField" destination="tN8-b3-60U" id="JZH-cf-p5N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kk-Jz-Tce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1681,7 +1694,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="363" height="52"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wni-te-o5q">
-                                                                        <rect key="frame" x="20" y="0.0" width="122" height="52"/>
+                                                                        <rect key="frame" x="20" y="0.0" width="323" height="52"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <textInputTraits key="textInputTraits"/>
@@ -1697,6 +1710,7 @@
                                                                     <constraint firstItem="Wni-te-o5q" firstAttribute="leading" secondItem="QmX-1x-VGk" secondAttribute="leading" constant="20" id="5L1-rV-hig"/>
                                                                     <constraint firstAttribute="width" secondItem="QmX-1x-VGk" secondAttribute="height" multiplier="357:51" id="6Q5-P1-6zA"/>
                                                                     <constraint firstItem="Wni-te-o5q" firstAttribute="top" secondItem="QmX-1x-VGk" secondAttribute="top" id="fTT-vc-VAN"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Wni-te-o5q" secondAttribute="trailing" constant="20" id="l9d-hj-a54"/>
                                                                     <constraint firstAttribute="bottom" secondItem="Wni-te-o5q" secondAttribute="bottom" id="rpD-1o-eOD"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
@@ -1741,6 +1755,9 @@
                                                                 <real key="value" value="13"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addServiceDidTapped:" destination="0Vh-ff-1aM" eventType="touchUpInside" id="Fdf-tt-R6r"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1760,6 +1777,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="BZN-GH-0j6"/>
+                    <connections>
+                        <outlet property="serviceName" destination="usy-it-WBY" id="CMN-Qz-Btj"/>
+                        <outlet property="servicePrice" destination="Wni-te-o5q" id="NNt-Si-63s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGo-0n-NiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

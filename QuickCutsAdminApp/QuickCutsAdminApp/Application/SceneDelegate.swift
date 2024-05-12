@@ -1,11 +1,5 @@
-//
-//  SceneDelegate.swift
-//  QuickCutsAdminApp
-//
-//  Created by Neeraj Sharma on 01/05/24.
-//
-
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,8 +7,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        GoToSigninVC()
+        handleAuthNavigation()
         guard let _ = (scene as? UIWindowScene) else { return }
+    }
+    
+    private func handleAuthNavigation() {
+        if Auth.auth().currentUser != nil {
+            GoToHomeVC()
+            AppDataManager.shared.fetchAndSaveProfile()
+        } else {
+            GoToSigninVC()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}
@@ -27,6 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneDidEnterBackground(_ scene: UIScene) {}
 }
+
 func GoToSigninVC(){
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let vc =  storyboard.instantiateViewController(withIdentifier: "SignInVC")
@@ -37,6 +41,7 @@ func GoToSigninVC(){
         window.makeKeyAndVisible()
     }
 }
+
 func GoToHomeVC(){
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let vc =  storyboard.instantiateViewController(withIdentifier: "CustomUITabBarController")
@@ -47,6 +52,7 @@ func GoToHomeVC(){
         window.makeKeyAndVisible()
     }
 }
+
 func GetWindow() -> UIWindow? {
     if #available(iOS 13.0, *) {
         let sceneDelegate = UIApplication.shared.connectedScenes

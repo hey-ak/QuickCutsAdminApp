@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4892AF2BED6AEF0093EECA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E4892AE2BED6AEF0093EECA /* GoogleService-Info.plist */; };
+		7E4892CD2BED6B2A0093EECA /* DKChainableAnimationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B02BED6B260093EECA /* DKChainableAnimationKit.swift */; };
+		7E4892CE2BED6B2A0093EECA /* DKChainableAnimationKit+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B12BED6B260093EECA /* DKChainableAnimationKit+Anchor.swift */; };
+		7E4892CF2BED6B2A0093EECA /* DKChainableAnimationKit+Bezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B22BED6B260093EECA /* DKChainableAnimationKit+Bezier.swift */; };
+		7E4892D02BED6B2A0093EECA /* DKChainableAnimationKit+Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B32BED6B260093EECA /* DKChainableAnimationKit+Effects.swift */; };
+		7E4892D12BED6B2A0093EECA /* DKChainableAnimationKit+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B42BED6B260093EECA /* DKChainableAnimationKit+Extra.swift */; };
+		7E4892D22BED6B2A0093EECA /* DKChainableAnimationKit+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B52BED6B260093EECA /* DKChainableAnimationKit+Frame.swift */; };
+		7E4892D32BED6B2A0093EECA /* DKChainableAnimationKit+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B62BED6B260093EECA /* DKChainableAnimationKit+Transform.swift */; };
+		7E4892D42BED6B2A0093EECA /* DKKeyFrameAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B72BED6B260093EECA /* DKKeyFrameAnimation.swift */; };
+		7E4892D52BED6B2A0093EECA /* DKKeyframeAnimationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B82BED6B260093EECA /* DKKeyframeAnimationFunction.swift */; };
+		7E4892D62BED6B2A0093EECA /* UIView+AnimationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892B92BED6B260093EECA /* UIView+AnimationKit.swift */; };
+		7E4892D72BED6B2A0093EECA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892BB2BED6B270093EECA /* DateExtension.swift */; };
+		7E4892D82BED6B2A0093EECA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892BC2BED6B280093EECA /* StringExtension.swift */; };
+		7E4892D92BED6B2A0093EECA /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892BD2BED6B290093EECA /* AnimationType.swift */; };
+		7E4892DA2BED6B2A0093EECA /* AppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892BE2BED6B290093EECA /* AppleToastView.swift */; };
+		7E4892DB2BED6B2A0093EECA /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892BF2BED6B290093EECA /* Direction.swift */; };
+		7E4892DC2BED6B2A0093EECA /* IconAppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C02BED6B290093EECA /* IconAppleToastView.swift */; };
+		7E4892DD2BED6B2A0093EECA /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C12BED6B290093EECA /* MulticastDelegate.swift */; };
+		7E4892DE2BED6B2A0093EECA /* TextAppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C22BED6B290093EECA /* TextAppleToastView.swift */; };
+		7E4892DF2BED6B2A0093EECA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C32BED6B290093EECA /* Toast.swift */; };
+		7E4892E02BED6B2A0093EECA /* ToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C42BED6B290093EECA /* ToastConfiguration.swift */; };
+		7E4892E12BED6B2A0093EECA /* ToastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C52BED6B290093EECA /* ToastDelegate.swift */; };
+		7E4892E22BED6B2A0093EECA /* ToastHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C62BED6B290093EECA /* ToastHelper.swift */; };
+		7E4892E32BED6B2A0093EECA /* ToastQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C72BED6B290093EECA /* ToastQueue.swift */; };
+		7E4892E42BED6B2A0093EECA /* ToastQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C82BED6B290093EECA /* ToastQueueDelegate.swift */; };
+		7E4892E52BED6B2A0093EECA /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892C92BED6B290093EECA /* ToastView.swift */; };
+		7E4892E62BED6B2A0093EECA /* ToastViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892CA2BED6B290093EECA /* ToastViewConfiguration.swift */; };
+		7E4892E72BED6B2A0093EECA /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892CC2BED6B2A0093EECA /* UICollectionViewExtension.swift */; };
+		7E4892E92BED6B380093EECA /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892E82BED6B380093EECA /* AppEnums.swift */; };
+		7E4892EF2BED6B570093EECA /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892EA2BED6B570093EECA /* AppDataManager.swift */; };
+		7E4892F02BED6B570093EECA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892EB2BED6B570093EECA /* LocationManager.swift */; };
+		7E4892F12BED6B570093EECA /* SaloneDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892EC2BED6B570093EECA /* SaloneDataManager.swift */; };
+		7E4892F22BED6B570093EECA /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892ED2BED6B570093EECA /* ValidationManager.swift */; };
+		7E4892F62BED6B8E0093EECA /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892F32BED6B8D0093EECA /* DataModels.swift */; };
+		7E4892F72BED6B8E0093EECA /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4892F42BED6B8D0093EECA /* ExploreModel.swift */; };
+		7E5959432BEDEEEB005F7FE7 /* BookingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5959422BEDEEEB005F7FE7 /* BookingManager.swift */; };
+		7E5959492BF0C58F005F7FE7 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5959482BF0C58F005F7FE7 /* ReviewManager.swift */; };
+		988063A40BCB2E0E6AB699F1 /* Pods_QuickCutsAdminApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEF5F519C89AF25951EE87D /* Pods_QuickCutsAdminApp.framework */; };
 		A968492D2BE20DE5004523B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968492C2BE20DE5004523B2 /* AppDelegate.swift */; };
 		A968492F2BE20DE5004523B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968492E2BE20DE5004523B2 /* SceneDelegate.swift */; };
 		A96849312BE20DE5004523B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96849302BE20DE5004523B2 /* ViewController.swift */; };
@@ -55,6 +93,45 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BDDF89353F47FCF6706AA2C /* Pods-QuickCutsAdminApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCutsAdminApp.release.xcconfig"; path = "Target Support Files/Pods-QuickCutsAdminApp/Pods-QuickCutsAdminApp.release.xcconfig"; sourceTree = "<group>"; };
+		7E4892AE2BED6AEF0093EECA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E4892B02BED6B260093EECA /* DKChainableAnimationKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKChainableAnimationKit.swift; sourceTree = "<group>"; };
+		7E4892B12BED6B260093EECA /* DKChainableAnimationKit+Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKChainableAnimationKit+Anchor.swift"; sourceTree = "<group>"; };
+		7E4892B22BED6B260093EECA /* DKChainableAnimationKit+Bezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKChainableAnimationKit+Bezier.swift"; sourceTree = "<group>"; };
+		7E4892B32BED6B260093EECA /* DKChainableAnimationKit+Effects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKChainableAnimationKit+Effects.swift"; sourceTree = "<group>"; };
+		7E4892B42BED6B260093EECA /* DKChainableAnimationKit+Extra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKChainableAnimationKit+Extra.swift"; sourceTree = "<group>"; };
+		7E4892B52BED6B260093EECA /* DKChainableAnimationKit+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKChainableAnimationKit+Frame.swift"; sourceTree = "<group>"; };
+		7E4892B62BED6B260093EECA /* DKChainableAnimationKit+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKChainableAnimationKit+Transform.swift"; sourceTree = "<group>"; };
+		7E4892B72BED6B260093EECA /* DKKeyFrameAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKKeyFrameAnimation.swift; sourceTree = "<group>"; };
+		7E4892B82BED6B260093EECA /* DKKeyframeAnimationFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKKeyframeAnimationFunction.swift; sourceTree = "<group>"; };
+		7E4892B92BED6B260093EECA /* UIView+AnimationKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AnimationKit.swift"; sourceTree = "<group>"; };
+		7E4892BB2BED6B270093EECA /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		7E4892BC2BED6B280093EECA /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7E4892BD2BED6B290093EECA /* AnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
+		7E4892BE2BED6B290093EECA /* AppleToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleToastView.swift; sourceTree = "<group>"; };
+		7E4892BF2BED6B290093EECA /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		7E4892C02BED6B290093EECA /* IconAppleToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconAppleToastView.swift; sourceTree = "<group>"; };
+		7E4892C12BED6B290093EECA /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		7E4892C22BED6B290093EECA /* TextAppleToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAppleToastView.swift; sourceTree = "<group>"; };
+		7E4892C32BED6B290093EECA /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		7E4892C42BED6B290093EECA /* ToastConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastConfiguration.swift; sourceTree = "<group>"; };
+		7E4892C52BED6B290093EECA /* ToastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastDelegate.swift; sourceTree = "<group>"; };
+		7E4892C62BED6B290093EECA /* ToastHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastHelper.swift; sourceTree = "<group>"; };
+		7E4892C72BED6B290093EECA /* ToastQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastQueue.swift; sourceTree = "<group>"; };
+		7E4892C82BED6B290093EECA /* ToastQueueDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastQueueDelegate.swift; sourceTree = "<group>"; };
+		7E4892C92BED6B290093EECA /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7E4892CA2BED6B290093EECA /* ToastViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastViewConfiguration.swift; sourceTree = "<group>"; };
+		7E4892CC2BED6B2A0093EECA /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		7E4892E82BED6B380093EECA /* AppEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		7E4892EA2BED6B570093EECA /* AppDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
+		7E4892EB2BED6B570093EECA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7E4892EC2BED6B570093EECA /* SaloneDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaloneDataManager.swift; sourceTree = "<group>"; };
+		7E4892ED2BED6B570093EECA /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		7E4892F32BED6B8D0093EECA /* DataModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		7E4892F42BED6B8D0093EECA /* ExploreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
+		7E5959422BEDEEEB005F7FE7 /* BookingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingManager.swift; sourceTree = "<group>"; };
+		7E5959482BF0C58F005F7FE7 /* ReviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		8DEF5F519C89AF25951EE87D /* Pods_QuickCutsAdminApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCutsAdminApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96849292BE20DE5004523B2 /* QuickCutsAdminApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCutsAdminApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A968492C2BE20DE5004523B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A968492E2BE20DE5004523B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,11 +166,12 @@
 		A968498A2BE23D2C004523B2 /* BookingCancelledCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCancelledCollectionCell.xib; sourceTree = "<group>"; };
 		A968498B2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCancelledCollectionCell.swift; sourceTree = "<group>"; };
 		A968498C2BE23D2C004523B2 /* BookingCompletedCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCompletedCollectionCell.swift; sourceTree = "<group>"; };
+		A9A6F787A2CDFABDDA8329D2 /* Pods-QuickCutsAdminApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCutsAdminApp.debug.xcconfig"; path = "Target Support Files/Pods-QuickCutsAdminApp/Pods-QuickCutsAdminApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FF1A414E2BE8F85C00753E71 /* CancelScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelScreenViewController.swift; sourceTree = "<group>"; };
 		FF29C31B2BEA27B0006924EF /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		FF29C3222BEA2BDF006924EF /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF29C3232BEA2BDF006924EF /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
-		FF2F6FB52BEB54040074BEF8 /* dataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dataModel.swift; path = QuickCutsAdminApp/Controller/dataModel.swift; sourceTree = SOURCE_ROOT; };
+		FF2F6FB52BEB54040074BEF8 /* dataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dataModel.swift; path = QuickCutsAdminApp/Helpers/dataModel.swift; sourceTree = SOURCE_ROOT; };
 		FF3080662BE26D17005CCBB2 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		FF46EB112BE650FC0073BC46 /* CustomUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITabBarController.swift; sourceTree = "<group>"; };
 		FF46EB132BE65C660073BC46 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -109,17 +187,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988063A40BCB2E0E6AB699F1 /* Pods_QuickCutsAdminApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B7C0FF2A33B1B2C2F826F35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DEF5F519C89AF25951EE87D /* Pods_QuickCutsAdminApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E4892BA2BED6B260093EECA /* AnimationHandler */ = {
+			isa = PBXGroup;
+			children = (
+				7E4892B02BED6B260093EECA /* DKChainableAnimationKit.swift */,
+				7E4892B12BED6B260093EECA /* DKChainableAnimationKit+Anchor.swift */,
+				7E4892B22BED6B260093EECA /* DKChainableAnimationKit+Bezier.swift */,
+				7E4892B32BED6B260093EECA /* DKChainableAnimationKit+Effects.swift */,
+				7E4892B42BED6B260093EECA /* DKChainableAnimationKit+Extra.swift */,
+				7E4892B52BED6B260093EECA /* DKChainableAnimationKit+Frame.swift */,
+				7E4892B62BED6B260093EECA /* DKChainableAnimationKit+Transform.swift */,
+				7E4892B72BED6B260093EECA /* DKKeyFrameAnimation.swift */,
+				7E4892B82BED6B260093EECA /* DKKeyframeAnimationFunction.swift */,
+				7E4892B92BED6B260093EECA /* UIView+AnimationKit.swift */,
+			);
+			path = AnimationHandler;
+			sourceTree = "<group>";
+		};
+		7E4892CB2BED6B290093EECA /* ToastMessage */ = {
+			isa = PBXGroup;
+			children = (
+				7E4892BD2BED6B290093EECA /* AnimationType.swift */,
+				7E4892BE2BED6B290093EECA /* AppleToastView.swift */,
+				7E4892BF2BED6B290093EECA /* Direction.swift */,
+				7E4892C02BED6B290093EECA /* IconAppleToastView.swift */,
+				7E4892C12BED6B290093EECA /* MulticastDelegate.swift */,
+				7E4892C22BED6B290093EECA /* TextAppleToastView.swift */,
+				7E4892C32BED6B290093EECA /* Toast.swift */,
+				7E4892C42BED6B290093EECA /* ToastConfiguration.swift */,
+				7E4892C52BED6B290093EECA /* ToastDelegate.swift */,
+				7E4892C62BED6B290093EECA /* ToastHelper.swift */,
+				7E4892C72BED6B290093EECA /* ToastQueue.swift */,
+				7E4892C82BED6B290093EECA /* ToastQueueDelegate.swift */,
+				7E4892C92BED6B290093EECA /* ToastView.swift */,
+				7E4892CA2BED6B290093EECA /* ToastViewConfiguration.swift */,
+			);
+			path = ToastMessage;
+			sourceTree = "<group>";
+		};
+		7E4892EE2BED6B570093EECA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7E4892EA2BED6B570093EECA /* AppDataManager.swift */,
+				7E4892EB2BED6B570093EECA /* LocationManager.swift */,
+				7E5959422BEDEEEB005F7FE7 /* BookingManager.swift */,
+				7E5959482BF0C58F005F7FE7 /* ReviewManager.swift */,
+				7E4892EC2BED6B570093EECA /* SaloneDataManager.swift */,
+				7E4892ED2BED6B570093EECA /* ValidationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7E4892F52BED6B8D0093EECA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E4892F32BED6B8D0093EECA /* DataModels.swift */,
+				7E4892F42BED6B8D0093EECA /* ExploreModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A96849202BE20DE5004523B2 = {
 			isa = PBXGroup;
 			children = (
 				A968492B2BE20DE5004523B2 /* QuickCutsAdminApp */,
 				A968492A2BE20DE5004523B2 /* Products */,
+				F043F8992A23B9F46B8FE0A8 /* Pods */,
+				5B7C0FF2A33B1B2C2F826F35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,15 +283,16 @@
 		A968492B2BE20DE5004523B2 /* QuickCutsAdminApp */ = {
 			isa = PBXGroup;
 			children = (
-				A96849352BE20DE6004523B2 /* Assets.xcassets */,
+				7E4892AE2BED6AEF0093EECA /* GoogleService-Info.plist */,
 				A968493A2BE20DE6004523B2 /* Info.plist */,
+				A96849352BE20DE6004523B2 /* Assets.xcassets */,
+				A96849412BE20E16004523B2 /* Application */,
 				A96849462BE20E6F004523B2 /* Controller */,
 				A96849452BE20E60004523B2 /* Helpers */,
-				A96849442BE20E4C004523B2 /* Resouces */,
-				A96849432BE20E3F004523B2 /* Model */,
-				A96849422BE20E31004523B2 /* Xibs */,
-				A96849412BE20E16004523B2 /* Application */,
+				7E4892EE2BED6B570093EECA /* Managers */,
+				7E4892F52BED6B8D0093EECA /* Model */,
 				A96849402BE20DEF004523B2 /* View */,
+				A96849422BE20E31004523B2 /* Xibs */,
 			);
 			path = QuickCutsAdminApp;
 			sourceTree = "<group>";
@@ -196,25 +346,17 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
-		A96849432BE20E3F004523B2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FF2F6FB52BEB54040074BEF8 /* dataModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A96849442BE20E4C004523B2 /* Resouces */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resouces;
-			sourceTree = "<group>";
-		};
 		A96849452BE20E60004523B2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7E4892E82BED6B380093EECA /* AppEnums.swift */,
+				FF2F6FB52BEB54040074BEF8 /* dataModel.swift */,
+				7E4892BB2BED6B270093EECA /* DateExtension.swift */,
+				7E4892BC2BED6B280093EECA /* StringExtension.swift */,
+				7E4892CC2BED6B2A0093EECA /* UICollectionViewExtension.swift */,
 				A96849512BE2113D004523B2 /* ViewExtensions.swift */,
+				7E4892BA2BED6B260093EECA /* AnimationHandler */,
+				7E4892CB2BED6B290093EECA /* ToastMessage */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -240,6 +382,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		F043F8992A23B9F46B8FE0A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9A6F787A2CDFABDDA8329D2 /* Pods-QuickCutsAdminApp.debug.xcconfig */,
+				2BDDF89353F47FCF6706AA2C /* Pods-QuickCutsAdminApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,9 +398,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A968493D2BE20DE6004523B2 /* Build configuration list for PBXNativeTarget "QuickCutsAdminApp" */;
 			buildPhases = (
+				8CC63B3E09E94BFE81DF3B0F /* [CP] Check Pods Manifest.lock */,
 				A96849252BE20DE5004523B2 /* Sources */,
 				A96849262BE20DE5004523B2 /* Frameworks */,
 				A96849272BE20DE5004523B2 /* Resources */,
+				F09F829C57CF06BC559E89AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +460,7 @@
 				A968496C2BE2186B004523B2 /* dummyTableCell.xib in Resources */,
 				FF29C3252BEA2BDF006924EF /* MenuCollectionViewCell.xib in Resources */,
 				FF84497D2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.xib in Resources */,
+				7E4892AF2BED6AEF0093EECA /* GoogleService-Info.plist in Resources */,
 				A96849672BE21789004523B2 /* ProfileTableCell.xib in Resources */,
 				A96849552BE211DF004523B2 /* AlbumCollectionViewCell.xib in Resources */,
 				A96849342BE20DE5004523B2 /* Base in Resources */,
@@ -318,40 +472,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CC63B3E09E94BFE81DF3B0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickCutsAdminApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09F829C57CF06BC559E89AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCutsAdminApp/Pods-QuickCutsAdminApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCutsAdminApp/Pods-QuickCutsAdminApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCutsAdminApp/Pods-QuickCutsAdminApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A96849252BE20DE5004523B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4892DE2BED6B2A0093EECA /* TextAppleToastView.swift in Sources */,
 				A96849812BE21D2D004523B2 /* BookingCollectionCell.swift in Sources */,
 				FF2F6FB62BEB54040074BEF8 /* dataModel.swift in Sources */,
 				A96849682BE21789004523B2 /* ProfileTableCell.swift in Sources */,
+				7E4892E72BED6B2A0093EECA /* UICollectionViewExtension.swift in Sources */,
+				7E4892CE2BED6B2A0093EECA /* DKChainableAnimationKit+Anchor.swift in Sources */,
 				FF3080672BE26D17005CCBB2 /* AppointmentsViewController.swift in Sources */,
 				A968496B2BE2186B004523B2 /* dummyTableCell.swift in Sources */,
 				A96849602BE2176F004523B2 /* ProfileVC.swift in Sources */,
+				7E4892E42BED6B2A0093EECA /* ToastQueueDelegate.swift in Sources */,
+				7E4892D42BED6B2A0093EECA /* DKKeyFrameAnimation.swift in Sources */,
+				7E4892DB2BED6B2A0093EECA /* Direction.swift in Sources */,
+				7E4892E02BED6B2A0093EECA /* ToastConfiguration.swift in Sources */,
+				7E4892D92BED6B2A0093EECA /* AnimationType.swift in Sources */,
+				7E4892D82BED6B2A0093EECA /* StringExtension.swift in Sources */,
+				7E5959492BF0C58F005F7FE7 /* ReviewManager.swift in Sources */,
+				7E4892D62BED6B2A0093EECA /* UIView+AnimationKit.swift in Sources */,
 				A96849662BE21789004523B2 /* profileHeadTableCell.swift in Sources */,
 				A96849562BE211DF004523B2 /* AlbumCollectionViewCell.swift in Sources */,
+				7E4892F62BED6B8E0093EECA /* DataModels.swift in Sources */,
 				A968494F2BE21075004523B2 /* TimeSlotCollectionCell.swift in Sources */,
 				FF8449732BE2278E00B929E6 /* CentreSettingsViewController.swift in Sources */,
+				7E4892E32BED6B2A0093EECA /* ToastQueue.swift in Sources */,
 				A96849522BE2113D004523B2 /* ViewExtensions.swift in Sources */,
+				7E4892E62BED6B2A0093EECA /* ToastViewConfiguration.swift in Sources */,
 				A968494D2BE21075004523B2 /* DateSelectCollectionViewCell.swift in Sources */,
 				A968498F2BE23D2C004523B2 /* BookingCancelledCollectionCell.swift in Sources */,
+				7E4892DF2BED6B2A0093EECA /* Toast.swift in Sources */,
+				7E4892D52BED6B2A0093EECA /* DKKeyframeAnimationFunction.swift in Sources */,
+				7E4892E22BED6B2A0093EECA /* ToastHelper.swift in Sources */,
+				7E4892DA2BED6B2A0093EECA /* AppleToastView.swift in Sources */,
+				7E4892D72BED6B2A0093EECA /* DateExtension.swift in Sources */,
+				7E4892D22BED6B2A0093EECA /* DKChainableAnimationKit+Frame.swift in Sources */,
 				A96849902BE23D2C004523B2 /* BookingCompletedCollectionCell.swift in Sources */,
+				7E4892F02BED6B570093EECA /* LocationManager.swift in Sources */,
 				A96849312BE20DE5004523B2 /* ViewController.swift in Sources */,
+				7E4892D12BED6B2A0093EECA /* DKChainableAnimationKit+Extra.swift in Sources */,
 				FF29C31C2BEA27B0006924EF /* MenuVC.swift in Sources */,
 				FF29C3242BEA2BDF006924EF /* MenuCollectionViewCell.swift in Sources */,
+				7E4892E92BED6B380093EECA /* AppEnums.swift in Sources */,
 				A968495A2BE214CC004523B2 /* CentreVC.swift in Sources */,
 				FF84497C2BE23E1F00B929E6 /* SalonSettingHeadTableViewCell.swift in Sources */,
 				FF1A414F2BE8F85C00753E71 /* CancelScreenViewController.swift in Sources */,
 				A968492D2BE20DE5004523B2 /* AppDelegate.swift in Sources */,
 				FF46EB122BE650FC0073BC46 /* CustomUITabBarController.swift in Sources */,
+				7E4892E52BED6B2A0093EECA /* ToastView.swift in Sources */,
+				7E4892EF2BED6B570093EECA /* AppDataManager.swift in Sources */,
+				7E4892D02BED6B2A0093EECA /* DKChainableAnimationKit+Effects.swift in Sources */,
+				7E4892CF2BED6B2A0093EECA /* DKChainableAnimationKit+Bezier.swift in Sources */,
+				7E4892F12BED6B570093EECA /* SaloneDataManager.swift in Sources */,
 				A96849582BE211F4004523B2 /* AlbumVC.swift in Sources */,
+				7E4892CD2BED6B2A0093EECA /* DKChainableAnimationKit.swift in Sources */,
 				A968495E2BE214DA004523B2 /* CentreCollectionViewCell.swift in Sources */,
 				FF5C96E32BECCE8A00A15B75 /* AddServicesVC.swift in Sources */,
+				7E4892E12BED6B2A0093EECA /* ToastDelegate.swift in Sources */,
 				A968497A2BE21C9E004523B2 /* BookingVC.swift in Sources */,
+				7E4892DC2BED6B2A0093EECA /* IconAppleToastView.swift in Sources */,
 				A968492F2BE20DE5004523B2 /* SceneDelegate.swift in Sources */,
 				A96849482BE21059004523B2 /* DateAndTimeVC.swift in Sources */,
+				7E4892DD2BED6B2A0093EECA /* MulticastDelegate.swift in Sources */,
 				FF46EB162BE65DC50073BC46 /* SignUPVC.swift in Sources */,
+				7E4892D32BED6B2A0093EECA /* DKChainableAnimationKit+Transform.swift in Sources */,
+				7E4892F72BED6B8E0093EECA /* ExploreModel.swift in Sources */,
+				7E4892F22BED6B570093EECA /* ValidationManager.swift in Sources */,
+				7E5959432BEDEEEB005F7FE7 /* BookingManager.swift in Sources */,
 				FF46EB142BE65C660073BC46 /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +647,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -478,7 +710,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -499,15 +731,20 @@
 		};
 		A968493E2BE20DE6004523B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A6F787A2CDFABDDA8329D2 /* Pods-QuickCutsAdminApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MJWLK9T3B7;
+				DEVELOPMENT_TEAM = QUM623UT8W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickCutsAdminApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This string is required to gain permission to access location services on iOS 11+ and should describe how your app uses location services. Set this string in the Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This string is required to gain permission to access location services on iOS 8+ when the app in the background and should describe how your app uses location services. Set this string in the Info.plist";
+				INFOPLIST_KEY_NSLocationUsageDescription = "This string is optional but recommended on iOS 6 & 7 and should describe how your app uses location services. Set this string in the Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This string is required to gain permission to access location services on iOS 8+ and should describe how your app uses location services. Set this string in the Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -518,7 +755,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = team.Override.QuickCutsAdminApp;
+				PRODUCT_BUNDLE_IDENTIFIER = team.amitkum.QuickCutsAdminApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -529,15 +766,20 @@
 		};
 		A968493F2BE20DE6004523B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BDDF89353F47FCF6706AA2C /* Pods-QuickCutsAdminApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MJWLK9T3B7;
+				DEVELOPMENT_TEAM = QUM623UT8W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickCutsAdminApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This string is required to gain permission to access location services on iOS 11+ and should describe how your app uses location services. Set this string in the Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This string is required to gain permission to access location services on iOS 8+ when the app in the background and should describe how your app uses location services. Set this string in the Info.plist";
+				INFOPLIST_KEY_NSLocationUsageDescription = "This string is optional but recommended on iOS 6 & 7 and should describe how your app uses location services. Set this string in the Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This string is required to gain permission to access location services on iOS 8+ and should describe how your app uses location services. Set this string in the Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -548,7 +790,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = team.Override.QuickCutsAdminApp;
+				PRODUCT_BUNDLE_IDENTIFIER = team.amitkum.QuickCutsAdminApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
