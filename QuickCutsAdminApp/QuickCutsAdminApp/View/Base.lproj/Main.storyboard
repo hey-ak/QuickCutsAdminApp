@@ -354,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpw-7J-FUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3170" y="-1627"/>
+            <point key="canvasLocation" x="372" y="-1627"/>
         </scene>
         <!--Select Date & Time-->
         <scene sceneID="ojT-ZZ-cAM">
@@ -1777,6 +1777,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="BZN-GH-0j6"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="QVu-3a-8Q1"/>
                     <connections>
                         <outlet property="serviceName" destination="usy-it-WBY" id="CMN-Qz-Btj"/>
                         <outlet property="servicePrice" destination="Wni-te-o5q" id="NNt-Si-63s"/>
