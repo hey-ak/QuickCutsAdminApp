@@ -5,6 +5,8 @@ import FirebaseAuth
 class BookingVC: UIViewController {
     
     private var bookings = [BookingModel]()
+    private var expiredBooking = [BookingModel]()
+    private var UpcommingBooking = [BookingModel]()
     
 
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -36,6 +38,7 @@ class BookingVC: UIViewController {
                 if let bookings = bookings {
                     DispatchQueue.main.async {
                         self.bookings = bookings
+                        self.sortBookingAccoringToTime(bookings)
                         self.bookingCollectionView.reloadData()
                     }
                 } else {
@@ -43,6 +46,26 @@ class BookingVC: UIViewController {
                 }
             }
         }
+    }
+    
+    private func sortBookingAccoringToTime(_ bookings: [BookingModel]) {
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZ"
+
+        let (upcomingBookings, expiredBookings) = bookings.reduce(into: ([BookingModel](), [BookingModel]())) { result, booking in
+            if let expiryDateString = booking.expiryDate, let expiryDate = dateFormatter.date(from: expiryDateString) {
+                if expiryDate > currentDate {
+                    result.0.append(booking)
+                } else {
+                    result.1.append(booking)
+                }
+            }
+        }
+        
+        expiredBooking = expiredBookings
+        UpcommingBooking = upcomingBookings
+        bookingCollectionView.reloadData()
     }
     
     @objc
@@ -78,7 +101,13 @@ class BookingVC: UIViewController {
 extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return bookings.count
+        let currentSegment = segmentControl.selectedSegmentIndex
+        switch currentSegment {
+        case 0: return UpcommingBooking.count
+        case 1: return expiredBooking.count
+        case 2: return bookings.count
+        default: return 0
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -86,7 +115,7 @@ extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         switch currentSegment {
         case 0:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCollectionCell", for: indexPath) as? BookingCollectionCell {
-                let data = bookings[indexPath.row]
+                let data = UpcommingBooking[indexPath.row]
                 cell.appointmentDateAndTimeLabel.text = data.bookingDate
                 
                 if let url = data.userProfileImage,
@@ -104,6 +133,8 @@ extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
                 cell.customerServiceNameLabel.text = "Services : \(serviceName ?? "")"
                 cell.customerServiceId.text = "Service ID: \(data.id)"
                 cell.customerServiceDuration.text = "Service Duration: \((data.services?.count ?? 0) * 30) min"
+                
+                
                 cell.RescheduleButton.addTarget(self, action: #selector(RescheduleButton),for: .touchUpInside)
                 cell.cancelServiceButton.addTarget(self, action: #selector(cancelServiceButton),for: .touchUpInside)
                 return cell
@@ -112,26 +143,50 @@ extension BookingVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         case 1:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCompletedCollectionCell", for: indexPath) as? BookingCompletedCollectionCell {
                 
-//                let data = dummyCompletedServices[indexPath.row]
-//                cell.completedServiceDateAndTimeLabel.text = data.dateAndTime
-//                cell.completedUserImage.image = UIImage(named: data.custImage)
-//                cell.completedUserName.text = data.custName
-//                cell.completedUserServicesLabel.text = "Service Name: \(data.custServiceName)"
-//                cell.completedServiceID.text = "Service ID: \(data.custServiceId)"
-//                cell.completedServiceDurationLabel.text = "Service Duration: \(data.custServiceDuration)"
+                let data = expiredBooking[indexPath.row]
+                
+                cell.completedServiceDateAndTimeLabel.text = data.bookingDate
+                
+                if let url = data.userProfileImage,
+                   let profileUrl = URL(string: url) {
+                    cell.completedUserImage.sd_imageIndicator = SDWebImageActivityIndicator.gray
+                    cell.completedUserImage.sd_setImage(with: profileUrl,
+                                                      placeholderImage: UIImage(named: "profilePic"))
+                }
+                else {
+                    cell.completedUserImage.image = UIImage(named: "profilePic")
+                }
+                
+                let serviceName = getServiceNames(data.services)
+                cell.completedUserServicesLabel.text = "Services : \(serviceName ?? "")"
+                cell.completedUserName.text = data.userName
+                cell.completedServiceID.text = "Service ID: #\(data.id)"
+                cell.completedServiceDurationLabel.text = "Service Duration: \((data.services?.count ?? 0) * 30) min"
                 
                 return cell
             }
 
         case 2:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingCancelledCollectionCell", for: indexPath) as? BookingCancelledCollectionCell {
-//                let data = dummyCompletedServices[indexPath.row]
-//                cell.cancelledDateAndTimeLabel.text = data.dateAndTime
-//                cell.cancelledUserImage.image = UIImage(named: data.custImage)
-//                cell.cancelledCustomerName.text = data.custName
-//                cell.cancelledServiceNameLabel.text = "Service Name: \(data.custServiceName)"
-//                cell.cancelledServiceIDLabel.text = "Service ID: \(data.custServiceId)"
-//                cell.cancelledServiceDurationLabel.text = "Service Duration: \(data.custServiceDuration)"
+                let data = bookings[indexPath.row]
+                
+                cell.cancelledDateAndTimeLabel.text = data.bookingDate
+                
+                if let url = data.userProfileImage,
+                   let profileUrl = URL(string: url) {
+                    cell.cancelledUserImage.sd_imageIndicator = SDWebImageActivityIndicator.gray
+                    cell.cancelledUserImage.sd_setImage(with: profileUrl,
+                                                      placeholderImage: UIImage(named: "profilePic"))
+                }
+                else {
+                    cell.cancelledUserImage.image = UIImage(named: "profilePic")
+                }
+                
+                let serviceName = getServiceNames(data.services)
+                cell.cancelledServiceNameLabel.text = "Services : \(serviceName ?? "")"
+                cell.cancelledCustomerName.text = data.userName
+                cell.cancelledServiceIDLabel.text = "Service ID: #\(data.id)"
+                cell.cancelledServiceDurationLabel.text = "Service Duration: \((data.services?.count ?? 0) * 30) min"
                 return cell
             }
 
@@ -158,7 +213,7 @@ struct BookingModel:Codable {
     let selectedTimeIds:[Int]?
     let bookingDate:String?
     let isCancled:Bool?
-    let expiryDate:Date?
+    let expiryDate:String?
     let userProfileImage:String?
     let isCancelledBySalone:String?
 }

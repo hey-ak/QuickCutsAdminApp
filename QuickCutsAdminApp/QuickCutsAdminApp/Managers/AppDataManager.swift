@@ -186,60 +186,57 @@ class AppDataManager {
         ReviewManager.shared.getReviews(forUserId: salonId) { [weak self] reviews, error in
             if let error = error { print( error.localizedDescription ) }
             else if let reviews = reviews {
-                if reviews.count > 0,let firstReview = reviews.first {
-                    self?.processRating(firstReview)
+                if reviews.count > 0 {
+                    self?.processRating(reviews)
                 }
             }
         }
     }
     
-    private func processRating(_ reviews: SalonReview) {
-        guard let comments = reviews.userCommentData else { return }
-        let totleStarsCount = comments.count * 5 * 5
-        
+    private func processRating(_ reviews: [SalonReview]) {
+        var totleStarsCount = 0
         var allUserTotleStars:Int = 0
+        var commentsTotle = 0
         
-        for review in comments {
-            if let serviceRating = review.serviceRating,
-               let hygieneRating = review.hygieneRating,
-               let staffRating = review.staffRating,
-               let moneyRating = review.moneyRating,
-               let experienceRating = review.experienceRating {
-                
-                let totleStars = serviceRating + hygieneRating + staffRating + moneyRating + experienceRating
-                allUserTotleStars = allUserTotleStars + totleStars
-                
+        for review in reviews {
+            guard let comments = review.userCommentData else { continue }
+            commentsTotle = commentsTotle + comments.count
+            totleStarsCount = totleStarsCount + (comments.count * 5 * 5)
+            
+            for review1 in comments {
+                if let serviceRating = review1.serviceRating,
+                   let hygieneRating = review1.hygieneRating,
+                   let staffRating = review1.staffRating,
+                   let moneyRating = review1.moneyRating,
+                   let experienceRating = review1.experienceRating {
+                    
+                    let totleStars = serviceRating + hygieneRating + staffRating + moneyRating + experienceRating
+                    allUserTotleStars = allUserTotleStars + totleStars
+                }
             }
         }
+        
         let averageStar = Int(allUserTotleStars / (totleStarsCount / 5))
-        updateReviewData(averageStar, commentCount: comments.count)
+        updateReviewData(averageStar, commentCount: commentsTotle)
     }
     
     private func updateReviewData(_ averageRating:Int,commentCount:Int) {
-        guard let userId = Auth.auth().currentUser?.uid else { return }
-        AppDataManager.shared.fetchUserProfile(for: userId) { result in
-            switch result {
-            case .success(let userProfile):
-          
-                    var userProfile = userProfile
-                userProfile.reviews = commentCount
-                userProfile.rating = Double(averageRating)
-                    
-                    self.updateUserProfile(for: userId, with: userProfile) { result in
-                        switch result {
-                        case .success:
-                            DispatchQueue.main.async {
-                                AppDataManager.shared.saveUserProfile(userProfile)
-                                AppDataManager.shared.saveLoggedUserID(userId)
-                            }
-                        case .failure(let error):
-                            DispatchQueue.main.async {
-                                
-                            }
-                        }
-                    }
-            default:
-                break
+        guard let saloneId = Auth.auth().currentUser?.uid else { return }
+        
+        FirebaseManager().getSalon(salonId: saloneId) {[weak self] (salon, error) in
+            guard error == nil,var salone = salon else { return }
+            
+            var userProfile = salone
+            userProfile.reviews = commentCount
+            userProfile.rating = Double(averageRating)
+            
+            self?.updateUserProfile(for: saloneId, with: userProfile) { result in
+                switch result {
+                case .success:
+                    DispatchQueue.main.async { }
+                case .failure(let error):
+                    DispatchQueue.main.async { }
+                }
             }
         }
     }

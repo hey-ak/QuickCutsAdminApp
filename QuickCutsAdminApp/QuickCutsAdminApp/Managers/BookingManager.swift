@@ -96,7 +96,7 @@ class BookingManager {
         let isCancelledBySalone = data["isCancelledBySalone"] as? String
         
         
-        let expiryDate = data["expiryDate"] as? Date
+        let expiryDate = data["expiryDate"] as? String
         let isCancled = data["isCancled"] as? Bool
         
         let saloneImgae = data["saloneImgae"] as? String
